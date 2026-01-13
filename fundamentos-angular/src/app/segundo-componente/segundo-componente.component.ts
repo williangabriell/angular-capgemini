@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./segundo-componente.component.css']
 })
 export class SegundoComponenteComponent {
-  nome = 'Willian';
+  nome = 'João';
   dataNascimento = "1990-05-15";
+  urlImagem = "/assets/joao.avif";
+
+  mostrarDataNascimento() {
+    alert(`A data de nascimento do João é: ${this.dataNascimento}`)
+  }
 }
